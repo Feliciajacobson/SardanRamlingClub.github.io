@@ -1,0 +1,227 @@
+/*===================================
+  ||    [AUTHOR = Felicia Jacobson]    ||
+  ===================================*/
+/*==========================
+  Container & Sections Start
+  ==========================*/
+.container {
+  max-width: 90%;
+  height: auto;
+  margin: 40px auto 50px auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container .section-1 {
+  width: 70%;
+  float: left;
+  margin: 0;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.container .section-1 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: acme;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.container .section-1 h1 + img {
+  width: 350px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+.container .section-1 p {
+  margin: 0;
+  text-align: justify;
+  text-indent: 25px;
+  font-size: 18px;
+  font-family: nunito;
+}
+.container .section-1 p + img {
+  width: 350px;
+  height: auto;
+  float: right;
+  margin-left: 10px;
+  margin-top: 35px;
+  display: block;
+  box-sizing: border-box;
+}
+.container .section-2 {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  box-sizing: border-box;
+}
+.container .section-2 h1 {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 25px;
+  font-family: acme;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: color 3s forwards alternate infinite;
+  -webkit-animation: color 3s forwards alternate infinite;
+}
+.container .section-2 .col-1, .container .section-2 .col-3, .container .section-2 .col-2 {
+  display: block;
+  height: 50px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.container .section-2 .col-1 img, .container .section-2 .col-3 img, .container .section-2 .col-2 img {
+  width: 30%;
+  float: left;
+  height: auto;
+}
+.container .section-2 .col-1 p, .container .section-2 .col-3 p, .container .section-2 .col-2 p {
+  width: 70%;
+  height: auto;
+  margin: 0;
+  font-size: 12px;
+  font-family: alfa;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+.container .section-2 .col-4 {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container .section-2 .col-4 ul {
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .section-2 .col-4 li {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  border-radius: 5px 0px;
+  box-sizing: border-box;
+}
+.container .section-2 .col-4 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px 0px;
+  text-align: center;
+  font-family: raleway;
+  font-weight: bold;
+  background-color: #86a3b2;
+  display: block;
+  box-sizing: border-box;
+}
+.container .section-2 .col-4 a:hover {
+  background-color: #276891;
+  color: white;
+}
+.container .section-2 .col-4 a:active {
+  color: red;
+}
+.container .section-3 {
+  width: 30%;
+  margin-top: 30px;
+  float: left;
+  box-sizing: border-box;
+}
+.container .section-3 table {
+  width: 100%;
+  height: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.container .section-3 table th {
+  text-align: left;
+  font-family: alfa;
+  color: white;
+  letter-spacing: 3px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.23);
+  background-color: #1c7df4;
+}
+.container .section-3 table td {
+  font-family: comfort;
+  font-size: 17px;
+}
+.container .section-3 table th, .container .section-3 table td {
+  border: 1px solid #1c7df4;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .section-3 table tbody tr {
+  text-align: center;
+}
+.container .section-3 table tbody tr:nth-child(even) td {
+  background-color: #c7dffc;
+}
+
+/*========================
+  Container & Sections End
+  ========================*/
+/*========================
+  Back To Top Button Start
+  ========================*/
+div.container + a {
+  position: absolute;
+  left: 47%;
+  font-family: indie;
+  color: white;
+  background-color: #0959bb;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px/15px;
+}
+
+div.container + a:hover {
+  background-color: #2d77a5;
+  box-shadow: 1px 2px 3px black;
+  transform: translateY(-5px);
+}
+
+/*======================
+  Back To Top Button End
+  ======================*/
+@keyframes color {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    color: red;
+  }
+  80% {
+    color: gold;
+  }
+  100% {
+    color: green;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    color: red;
+  }
+  80% {
+    color: gold;
+  }
+  100% {
+    color: green;
+  }
+}
+/*===============================================
+  ||    [Copyright 2024 All Rights Reserved]   ||
+  ===============================================*/

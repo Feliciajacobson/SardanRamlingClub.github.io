@@ -1,0 +1,290 @@
+/*===================================
+  ||    [AUTHOR = Felicia Jacobson]    ||
+  ===================================*/
+/*=============
+  REGISTER BODY
+  =============*/
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  -webkit-font-size-adjust: 100%;
+  background-image: url("../images/waterfall.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center center;
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*==============
+  PAGE CONTAINER
+  ==============*/
+.page-container header {
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+.page-container header img {
+  width: 18%;
+  height: auto;
+  margin-left: 30px;
+  float: left;
+  display: block;
+}
+.page-container header ul {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.page-container header ul li {
+  list-style-type: none;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+.page-container header ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-family: nunito;
+  font-weight: bold;
+}
+.page-container header ul a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: yellow;
+  box-shadow: 1px 1px 2px white;
+}
+
+/*=====
+  FORMS
+  =====*/
+form {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+form legend {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: longcang;
+  padding-bottom: 10px;
+}
+form label {
+  width: 100%;
+  padding: 3px;
+  color: #173d55;
+  font-weight: bold;
+  font-family: nunito;
+}
+form input[type=email] {
+  background-image: url("../images/social/email.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+form input[type=email],
+form input[type=password],
+form input[type=tel] {
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: rgba(23, 61, 85, 0.5);
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 3px;
+  font-family: nunito;
+  border: none;
+  text-align: justify;
+  box-sizing: border-box;
+}
+form input[type=tel] {
+  background-image: url("../images/social/call-icon.png");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 95% center;
+}
+form input[type=email]:focus,
+form input[type=password]:focus,
+form input[type=tel]:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px #215a73;
+  background-color: rgba(23, 61, 85, 0.8);
+}
+form select {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(23, 61, 85, 0.5);
+  border-radius: 3px;
+  border: none;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-family: indie;
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: white;
+  font-weight: normal;
+}
+form select option {
+  outline: none;
+  border: none;
+  background-color: rgba(23, 61, 85, 0.9);
+  font-family: acme;
+}
+form select option:nth-child(odd) {
+  background-color: #2d77a5;
+}
+form select:focus {
+  outline: none;
+}
+form label[for=news] {
+  font-family: lemon;
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+form label[for=news] span {
+  margin: 5px;
+  box-sizing: border-box;
+  font-family: lemon;
+  font-size: 22px;
+  font-weight: normal;
+}
+form label[for=news] span a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: darkred;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: do;
+  font-weight: normal;
+}
+form label[for=news] span a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+form label[for=news] #account {
+  float: right;
+  font-size: 14px;
+  font-family: raleway;
+}
+form label[for=news] #account a {
+  font-weight: bold;
+  color: lightseagreen;
+}
+form label[for=news] + p {
+  font-size: 15px;
+}
+form button[type=submit] {
+  float: right;
+  border-radius: 0px 4px 4px 0px;
+}
+form button[type=reset] {
+  float: left;
+  border-radius: 4px 0px 0px 4px;
+}
+form button[type=reset],
+form button[type=submit] {
+  width: 48%;
+  padding: 13px 20px;
+  border: none;
+  outline: none;
+  font-family: nunito;
+  cursor: pointer;
+  background-color: rgba(34, 139, 34, 0.9);
+  opacity: 0.8;
+  color: white;
+}
+form button[type=reset]:hover,
+form button[type=submit]:hover {
+  opacity: 1;
+}
+form button[type=reset] {
+  background-color: #ff3333;
+}
+form ::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: indie;
+}
+form :-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: indie;
+}
+form ::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: indie;
+}
+
+/*===============
+  Clearing Floats
+  ===============*/
+.clear, .row {
+  zoom: 1;
+}
+
+.clear::before, .row::before, .clear::after, .row::after {
+  content: "";
+  display: table;
+}
+
+.clear::after, .row::after {
+  clear: both;
+}
+
+/*=========
+  Row Start
+  =========*/
+.row {
+  box-sizing: border-box;
+}
+
+/*=========
+  Col Start
+  =========*/
+.col {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*===============================================
+  ||    [Copyright 2024 All Rights Reserved]   ||
+  ===============================================*/

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SARDAN | REGISTER</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Felicia Jacobson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rambling Club">
+    <link rel="Sardan Icon" href="../images/logos/Sardan_logo_round.png">
+    <link type="text/css" rel="stylesheet" href="../css/register.css">
+    <link type="text/css" rel="stylesheet" href="../css/fonts.css">
+  </head>
+  <body>
+    <div class="page-container">
+        <header class="clear">
+          <img src="../images/logos/sardan_logo2.png" alt="">
+            <nav>
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+              </ul>
+            </nav>
+        </header>
+        <!--Form Start-->
+        <form action="register.html" method="get" class="clear">
+          <fieldset>
+            <legend>SIGN UP</legend>
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" placeholder="Enter Your Email" required>
+
+            <label for="pass">Password</label>
+            <input id="pass" name="Password" type="password" placeholder="Choose Your Password" pattern=".{10,15}" required title="Password Must Be 10 To 15 Characters">
+
+            <label for="pass_2">Re-Type Password</label>
+            <input id="pass_2" name="Password-Repeat" type="password" placeholder="Re-Type Your Password" pattern=".{10,15}" required title="Password Must Be 10 To 15 Characters">
+
+            <label for="country">Country</label>
+            <select id="country" name="Country">
+              <option value="none" selected>Choose</option>
+              <option value="Benin">BENIN</option>
+              <option value="France">FRANCE</option>
+              <option value="Germany">GERMANY</option>
+              <option value="Ghana">GHANA</option>
+              <option value="Italy">ITALY</option>
+              <option value="Nigeria">NIGERIA</option>
+              <option value="Netherlands">NETHERLANDS</option>
+              <option value="Togo">TOGO</option>
+              <option value="United States">UNITED STATES</option>
+              <option value="United Kingdom">UNITED KINGDOM</option>
+            </select>
+
+            <label for="phone">Tel Number</label>
+            <input id="phone" name="Telephone" type="tel" placeholder="012-3456-789" pattern="[0-9]{10}">
+
+            <label for="news">
+              <input id="news" type="checkbox" value="news" checked>
+              <span>Recieve News Letters</span>
+              <span id="account">Have an Account? <a href="login.html">Login</a></span>
+            </label>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+            <button type="reset">Cancel</button>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+    </div>
+  </body>
+</html>
